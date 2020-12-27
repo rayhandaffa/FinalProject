@@ -1,0 +1,26 @@
+Referensi:
+http://zetcode.com/javagames/puzzle/
+
+Mengimplementasikan gameplay utama
+Fitur minimal yang harus ada:
+1.Window title game
+2.Pilihan level, kemudian window game utamanya.
+3.Scoring di game dan penyimpanan high score (menggunakan serializable)
+4. Halaman credits
+
+--Progress Fp--
+->Pilihan level(Easy, Medium,Hard)
+  String[] options1 = {"Easy", "Medium", "Hard"} ;
+  int input1 = JOptionPane.showOptionDialog(null, 
+        				"Choose Level", 
+        				"Puzzle", 
+        				JOptionPane.DEFAULT_OPTION, JOptionPane.QUESTION_MESSAGE, null, options1, options1[0]) ;
+        		
+->Difficulty setiap level
+1.Easy
+-NUMBER_OF_BUTTONS atau jumlah potongan puzzle.
+-Ada 9 potongan puzzle, 3x3
+2.Medium
+-16 potongan puzzle 4x4
+3.Hard
+-25 potongan puzzle, 5x5
